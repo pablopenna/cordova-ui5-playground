@@ -1,0 +1,24 @@
+{
+  "name": "cordova-ui5-playground",
+  "version": "1.0.0",
+  "description": "Cordova project to run sample/test UI5 code in actual devices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablopenna/cordova-ui5-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pablopenna/cordova-ui5-playground/issues"
+  },
+  "homepage": "https://github.com/pablopenna/cordova-ui5-playground#readme",
+  "dependencies": {
+    "cordova": "^13.0.0"
+  }
+}
