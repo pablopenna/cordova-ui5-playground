@@ -29,6 +29,24 @@
                 >
                     <StandardListItem title="{sample>id}" description="{sample>description}"/>
                 </List>
+
+                <Input 
+                    showClearIcon="true" 
+                    placeholder="with suggestions"
+                    showSuggestion="true"
+                    startSuggestion="0"
+                    suggestionItems="{sample>/items}"
+                >
+                    <suggestionItems>
+                        <SuggestionItem text="{sample>id}"/>
+                    </suggestionItems>
+                </Input>
+
+                <Input 
+                    showClearIcon="true" 
+                    placeholder="without suggestions"
+                />
+
             </FlexBox>
             <core:Fragment fragmentName="cordova-ui5-playground.view.fragments.Dialog" type="XML"/>
         </content>
