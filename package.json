@@ -2,22 +2,19 @@
   "name": "cordova-ui5-playground",
   "version": "1.0.0",
   "description": "Cordova project to run sample/test UI5 code in actual devices",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve-ui5-in-browser": "ui5 serve -o index.html"
+    "serve-ui5-in-browser": "ui5 serve -o index.html",
+    "build": "npm run build-ui5 && npm run build-apk",
+    "build-ui5": "ui5 build self-contained --include-all-dependencies --dest ./ui5_playground/www",
+    "build-apk": "cordova build",
+    "clean-build": "rm -rf ./ui5_playground/www/*",
+    "clean": "npm run clean-build && rm -rf ./node_modules ./ui5_playground/node_modules"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pablopenna/cordova-ui5-playground.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/pablopenna/cordova-ui5-playground/issues"
-  },
   "homepage": "https://github.com/pablopenna/cordova-ui5-playground#readme",
   "dependencies": {
     "@ui5/cli": "^4.0.36",
