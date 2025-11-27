@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Cordova project to run sample/test UI5 code in actual devices",
   "scripts": {
-    "serve-ui5-in-browser": "ui5 serve -o index.html",
+    "serve": "ui5 serve -o index.html",
     "build": "npm run build-ui5 && npm run build-apk",
     "build-ui5": "ui5 build self-contained --include-all-dependencies --dest ./ui5_playground/www",
     "build-apk": "cd ui5_playground && cordova build && cd -",

@@ -1,0 +1,18 @@
+<Dialog
+    xmlns="sap.m"
+    id="testDialog"
+    title="Dialog"
+    type="Message"
+    state="Error"
+    contentWidth="auto"
+>
+    <content>
+        <Text text="Sample text"/>
+    </content>
+    <buttons>
+        <Button
+            text="Close"
+            press=".onCloseDialog"
+        />
+    </buttons>
+</Dialog>

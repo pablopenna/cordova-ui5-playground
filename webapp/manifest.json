@@ -1,6 +1,87 @@
 {
-  "_version": "1.58.0",
+  "_version": "1.65.0",
   "sap.app": {
-    "id": "ui5.quickstart"
+    "id": "cordova-ui5-playground",
+    "i18n": "i18n/i18n.properties",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "type": "application",
+    "applicationVersion": {
+      "version": "1.0.0"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.108.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {},
+        "sap.ui.layout": {},
+        "sap.tnt": {
+          "lazy": true
+        }
+      }
+    },
+    "resources": {
+      "css": [{
+        "uri": "css/style.css"
+      }]
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "cordova-ui5-playground.i18n.i18n",
+          "supportedLocales": [
+            "en"
+          ],
+          "fallbackLocale": "en"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "cordova-ui5-playground.view.App",
+      "type": "XML",
+      "id": "app"
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "type": "View",
+        "viewType": "XML",
+        "path": "cordova-ui5-playground.view",
+        "controlId": "app",
+        "controlAggregation": "pages",
+        "transition": "slide",
+        "async": true,
+        "bypassed": {
+          "target": "notFound"
+        }
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "landing",
+          "target": [
+            "landing"
+          ]
+        }
+      ],
+      "targets": {
+        "landing": {
+          "id": "landing",
+          "name": "Landing",
+          "level": 1
+        }
+      }
+    }
   }
 }

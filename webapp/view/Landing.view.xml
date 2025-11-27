@@ -1,0 +1,36 @@
+<mvc:View
+    controllerName="cordova-ui5-playground.controller.Landing"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    xmlns:tnt="sap.tnt"
+>
+    <Page
+        id="landing"
+        contentOnlyBusy="true"
+    >
+        <content>
+            <Title text="{i18n>appTitle}" textAlign="Center" width="100%" class="sapUiMediumMarginTopBottom"/>
+            <FlexBox
+                direction="Column"
+                class="sapUiSmallMarginBeginEnd"
+            >
+                <Text text="sample text"/>
+                <Button icon="sap-icon://toaster-down" text="Dialog" press=".onOpenDialog"/>
+                <Text text="{sample>/foo}"/>
+
+                <List
+                    showNoData="true"
+                    items="{
+                        path: 'sample>/items'
+                    }"
+                >
+                    <StandardListItem title="{sample>id}" description="{sample>description}"/>
+                </List>
+            </FlexBox>
+            <core:Fragment fragmentName="cordova-ui5-playground.view.fragments.Dialog" type="XML"/>
+        </content>
+    </Page>
+</mvc:View>
