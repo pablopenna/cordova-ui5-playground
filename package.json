@@ -6,7 +6,7 @@
     "serve-ui5-in-browser": "ui5 serve -o index.html",
     "build": "npm run build-ui5 && npm run build-apk",
     "build-ui5": "ui5 build self-contained --include-all-dependencies --dest ./ui5_playground/www",
-    "build-apk": "cordova build",
+    "build-apk": "cd ui5_playground && cordova build && cd -",
     "clean-build": "rm -rf ./ui5_playground/www/*",
     "clean": "npm run clean-build && rm -rf ./node_modules ./ui5_playground/node_modules"
   },
