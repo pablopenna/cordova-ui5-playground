@@ -4,7 +4,8 @@
   "description": "Cordova project to run sample/test UI5 code in actual devices",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve-ui5-in-browser": "ui5 serve -o index.html"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/pablopenna/cordova-ui5-playground#readme",
   "dependencies": {
+    "@ui5/cli": "^4.0.36",
     "cordova": "^13.0.0"
   }
 }
