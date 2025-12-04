@@ -4,7 +4,7 @@ sap.ui.define([
 ], (UIComponent, JSONModel) => {
     "use strict";
 
-    return UIComponent.extend("libeup.eciWarehouseLoadScanner.Component", {
+    return UIComponent.extend("cordova-ui5-playground.Component", {
         metadata: {
             interfaces: ["sap.ui.core.IAsyncContentCreation"],
             manifest: "json",
@@ -19,6 +19,7 @@ sap.ui.define([
 
             // Create simple model
             this.setModel(new JSONModel({
+                version: sap.ui.version,
                 foo: "bar",
                 items: [
                     {

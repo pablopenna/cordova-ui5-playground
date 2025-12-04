@@ -17,6 +17,7 @@
                 direction="Column"
                 class="sapUiSmallMarginBeginEnd"
             >
+                <Text text="SAP UI5 version: {sample>/version}"/>
                 <Text text="sample text"/>
                 <Button icon="sap-icon://toaster-down" text="Dialog" press=".onOpenDialog"/>
                 <Text text="{sample>/foo}"/>

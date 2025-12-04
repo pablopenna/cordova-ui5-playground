@@ -4,18 +4,22 @@
 <head>
     <meta charset="utf-8">
     <title>ECI Warehouse Load Scanner</title>
-    <script src="polyfill-bundled.js"></script>
-    <script id="sap-ui-bootstrap" src="resources/sap-ui-core.js" data-sap-ui-libs="sap.m, sap.ui.layout, sap.tnt"
-        data-sap-ui-compat-version="edge" data-sap-ui-async="true"
-        data-sap-ui-on-init="module:sap/ui/core/ComponentSupport" data-sap-ui-resource-roots='{
+    <script 
+        id="sap-ui-bootstrap"
+        src="resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_horizon" 
+        data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+        data-sap-ui-compatVersion="edge"
+        data-sap-ui-async="true"
+        data-sap-ui-frameOptions="trusted"
+        data-sap-ui-resourceroots='{
 			"cordova-ui5-playground": "./"
 		}'>
         </script>
 </head>
 
 <body class="sapUiBody" id="content">
-    <div data-sap-ui-component data-name="cordova-ui5-playground" data-id="container"
-        data-settings='{"id" : "eciWarehouseLoadScanner"}'></div>
+    <div data-sap-ui-component data-name="cordova-ui5-playground" data-id="container" data-settings='{"id" : "cordova-ui5-playground"}'></div>
 </body>
 
 </html>
