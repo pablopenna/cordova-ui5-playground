@@ -1,0 +1,16 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "chrome": "60",
+          "android": "60"
+        },
+        "useBuiltIns": false,
+        "corejs": 3,
+        "modules": false
+      }
+    ]
+  ]
+}
