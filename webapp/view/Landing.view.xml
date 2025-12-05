@@ -20,6 +20,8 @@
                 <Text text="SAP UI5 version: {sample>/version}"/>
                 <Text text="sample text"/>
                 <Button icon="sap-icon://toaster-down" text="Dialog" press=".onOpenDialog"/>
+                <Button text="Test1" press=".test1"/>
+                <Button text="Test2" press=".test2"/>
                 <Text text="{sample>/foo}"/>
 
                 <List
