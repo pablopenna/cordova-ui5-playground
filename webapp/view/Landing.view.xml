@@ -17,37 +17,23 @@
                 direction="Column"
                 class="sapUiSmallMarginBeginEnd"
             >
-                <Text text="SAP UI5 version: {sample>/version}"/>
-                <Text text="sample text"/>
-                <Button icon="sap-icon://toaster-down" text="Dialog" press=".onOpenDialog"/>
-                <Text text="{sample>/foo}"/>
+                <Text text="SAP UI5 version: {sample>/version}" class="sapUiSmallMarginBottom"/>
 
-                <List
-                    showNoData="true"
-                    items="{
-                        path: 'sample>/items'
-                    }"
-                >
-                    <StandardListItem title="{sample>id}" description="{sample>description}"/>
-                </List>
-
+                <Label text="A (hide keyboard)"/>
                 <Input 
                     showClearIcon="true" 
-                    placeholder="with suggestions"
-                    showSuggestion="true"
-                    startSuggestion="0"
-                    suggestionItems="{sample>/items}"
-                >
-                    <suggestionItems>
-                        <SuggestionItem text="{sample>id}"/>
-                    </suggestionItems>
-                </Input>
-
-                <Input 
-                    showClearIcon="true" 
-                    placeholder="without suggestions"
+                    editable="false"
+                    id="autofocus"
                 />
-
+                <Label text="B (hide keyboard)"/>
+                <Input 
+                    showClearIcon="true" 
+                    editable="false"
+                />
+                <Label text="C (show keyboard)"/>
+                <Input 
+                    showClearIcon="true" 
+                />
             </FlexBox>
             <core:Fragment fragmentName="cordova-ui5-playground.view.fragments.Dialog" type="XML"/>
         </content>

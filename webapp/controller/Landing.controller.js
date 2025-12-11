@@ -6,6 +6,15 @@ sap.ui.define([
     return BaseController.extend("cordova-ui5-playground.controller.Landing", {
         onInit() {
             console.log("landing page onInit");
+
+            document.addEventListener('readystatechange', event => {
+                if(document.readyState !== "complete") {
+                    return;
+                }
+
+                const elementToAutofocus = document.getElementById("autofocus");
+                elementToAutofocus.focus();
+            });
         }
     });
 });
