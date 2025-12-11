@@ -8,7 +8,8 @@
     "build-ui5": "ui5 build self-contained --include-all-dependencies --dest ./ui5_playground/www",
     "build-apk": "cd ui5_playground && cordova build && cd -",
     "clean-build": "rm -rf ./ui5_playground/www/*",
-    "clean": "npm run clean-build && rm -rf ./node_modules ./ui5_playground/node_modules"
+    "clean": "npm run clean-build && rm -rf ./node_modules ./ui5_playground/node_modules",
+    "restart-cordova": "cd ui5_playground && cordova platform remove android && cordova platform add android && cd -"
   },
   "repository": {
     "type": "git",
